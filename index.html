@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>Find your FEN</title>
+	<link rel="stylesheet" href="styles.css">
+<head>
+
+</head>
+
+<body>
+
+<p id="output"></p>
+
+<!-- reduces mouseclicks to find a position (given its FEN) within Chessable courses -->
+
+<script>
+
+	var inputFEN = prompt("Please enter FEN: ");
+	f1 = inputFEN.replaceAll('/','U');
+	f2 = f1.replaceAll(" ","%20");
+	document.getElementById("output").innerHTML = "chessable.com/courses/fen/" + f2;
+
+</script>
+
+</body>
+</html>
